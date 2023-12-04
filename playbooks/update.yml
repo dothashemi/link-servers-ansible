@@ -1,0 +1,11 @@
+---
+- name: update debian-base servers
+  hosts: debian
+  roles:
+    - debian-update
+
+
+- name: update redhat-base servers
+  hosts: redhat
+  roles:
+    - redhat-update

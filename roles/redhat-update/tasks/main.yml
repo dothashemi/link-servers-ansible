@@ -1,0 +1,10 @@
+---
+- name: update redhat servers
+  yum:
+    name: "*"
+    state: latest
+    update_cache: true
+
+- name: remove packages not needed anymore
+  yum:
+    autoremove: yes
