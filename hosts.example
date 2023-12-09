@@ -1,0 +1,11 @@
+[all:children]
+debian
+redhat
+
+
+[debian]
+name	ansible_host=	ansible_port=
+
+
+[redhat]
+name	ansible_host=	ansible_port=
