@@ -10,6 +10,6 @@
     upgrade: dist
     force_apt_get: yes
 
-- name: remove packages not needed anymore
+- name: remove unused packages
   apt:
     autoremove: yes
