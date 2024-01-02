@@ -1,0 +1,12 @@
+---
+- name: Get All SSH Connections
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+    - name: run the script file
+      command: "bash ~/script.sh"
+      register: result
+
+    - debug: 
+        msg: "{{ result.stdout }}"
